@@ -63,5 +63,4 @@ with detection_graph.as_default():
   
     ax.imshow(image_np)
     plt.show()
-    print(test)
     
