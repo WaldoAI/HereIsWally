@@ -22,9 +22,8 @@ import tensorflow as tf
 
 from object_detection.core import data_decoder
 from object_detection.core import standard_fields as fields
-import tf_slim as slim
 
-slim_example_decoder = slim.tfexample_decoder
+slim_example_decoder = tf.contrib.slim.tfexample_decoder
 
 
 class TfExampleDecoder(data_decoder.DataDecoder):

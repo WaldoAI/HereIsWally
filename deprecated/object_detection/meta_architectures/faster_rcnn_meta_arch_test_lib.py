@@ -27,7 +27,7 @@ from object_detection.protos import box_predictor_pb2
 from object_detection.protos import hyperparams_pb2
 from object_detection.protos import post_processing_pb2
 
-import tf_slim as slim
+slim = tf.contrib.slim
 BOX_CODE_SIZE = 4
 
 

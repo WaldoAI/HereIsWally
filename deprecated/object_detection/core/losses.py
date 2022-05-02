@@ -34,7 +34,7 @@ from object_detection.core import box_list
 from object_detection.core import box_list_ops
 from object_detection.utils import ops
 
-import tf_slim as slim
+slim = tf.contrib.slim
 
 
 class Loss(object):

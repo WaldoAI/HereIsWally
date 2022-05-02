@@ -28,7 +28,7 @@ from object_detection.meta_architectures import faster_rcnn_meta_arch
 from object_detection.utils import variables_helper
 from nets import inception_resnet_v2
 
-import tf_slim as slim
+slim = tf.contrib.slim
 
 
 class FasterRCNNInceptionResnetV2FeatureExtractor(

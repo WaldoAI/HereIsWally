@@ -18,7 +18,7 @@ import tensorflow as tf
 
 from object_detection.core import prefetcher
 
-import tf_slim as slim
+slim = tf.contrib.slim
 
 
 class PrefetcherTest(tf.test.TestCase):

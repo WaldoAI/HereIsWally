@@ -31,7 +31,7 @@ import tensorflow as tf
 from object_detection.utils import ops
 from object_detection.utils import static_shape
 
-import tf_slim as slim
+slim = tf.contrib.slim
 
 BOX_ENCODINGS = 'box_encodings'
 CLASS_PREDICTIONS_WITH_BACKGROUND = 'class_predictions_with_background'

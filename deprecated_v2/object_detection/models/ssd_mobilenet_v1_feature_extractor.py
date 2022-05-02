@@ -21,7 +21,7 @@ from object_detection.meta_architectures import ssd_meta_arch
 from object_detection.models import feature_map_generators
 from nets import mobilenet_v1
 
-import tf_slim as slim
+slim = tf.contrib.slim
 
 
 class SSDMobileNetV1FeatureExtractor(ssd_meta_arch.SSDFeatureExtractor):

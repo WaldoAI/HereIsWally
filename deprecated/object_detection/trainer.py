@@ -32,7 +32,7 @@ from object_detection.utils import ops as util_ops
 from object_detection.utils import variables_helper
 import model_deploy
 
-import tf_slim as slim
+slim = tf.contrib.slim
 
 
 def _create_input_queue(batch_size_per_clone, create_tensor_dict_fn,

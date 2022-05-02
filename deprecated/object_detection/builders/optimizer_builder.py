@@ -18,7 +18,7 @@
 import tensorflow as tf
 from object_detection.utils import learning_schedules
 
-import tf_slim as slim
+slim = tf.contrib.slim
 
 
 def build(optimizer_config, global_summaries):

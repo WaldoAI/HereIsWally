@@ -19,7 +19,8 @@ import logging
 import re
 
 import tensorflow as tf
-import tf_slim as slim
+
+slim = tf.contrib.slim
 
 
 # TODO: Consider replacing with tf.contrib.filter_variables in

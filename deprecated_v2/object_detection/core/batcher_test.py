@@ -20,7 +20,7 @@ import tensorflow as tf
 
 from object_detection.core import batcher
 
-import tf_slim as slim
+slim = tf.contrib.slim
 
 
 class BatcherTest(tf.test.TestCase):

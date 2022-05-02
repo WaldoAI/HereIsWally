@@ -27,7 +27,7 @@ from object_detection.core import region_similarity_calculator as sim_calc
 from object_detection.meta_architectures import ssd_meta_arch
 from object_detection.utils import test_utils
 
-import tf_slim as slim
+slim = tf.contrib.slim
 
 
 class FakeSSDFeatureExtractor(ssd_meta_arch.SSDFeatureExtractor):

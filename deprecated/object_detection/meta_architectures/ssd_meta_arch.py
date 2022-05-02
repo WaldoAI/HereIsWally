@@ -31,7 +31,7 @@ from object_detection.core import standard_fields as fields
 from object_detection.core import target_assigner
 from object_detection.utils import variables_helper
 
-import tf_slim as slim
+slim = tf.contrib.slim
 
 
 class SSDFeatureExtractor(object):
