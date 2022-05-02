@@ -27,7 +27,7 @@ from object_detection.utils import label_map_util
 from object_detection.utils import object_detection_evaluation
 from object_detection.utils import visualization_utils as vis_utils
 
-slim = tf.contrib.slim
+import tf_slim as slim
 
 
 def write_metrics(metrics, global_step, summary_dir):
@@ -375,7 +375,7 @@ def run_checkpoint_once(tensor_dict,
   result_lists = {key: [] for key in valid_keys}
   counters = {'skipped': 0, 'success': 0}
   other_metrics = None
-  with tf.contrib.slim.queues.QueueRunners(sess):
+  with slim.queues.QueueRunners(sess):
     try:
       for batch in range(int(num_batches)):
         if (batch + 1) % 100 == 0:

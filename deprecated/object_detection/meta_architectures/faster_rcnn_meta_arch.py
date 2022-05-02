@@ -82,7 +82,7 @@ from object_detection.core import target_assigner
 from object_detection.utils import ops
 from object_detection.utils import variables_helper
 
-slim = tf.contrib.slim
+import tf_slim as slim
 
 
 class FasterRCNNFeatureExtractor(object):

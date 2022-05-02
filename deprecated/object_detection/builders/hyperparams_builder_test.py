@@ -24,7 +24,7 @@ from google.protobuf import text_format
 from object_detection.builders import hyperparams_builder
 from object_detection.protos import hyperparams_pb2
 
-slim = tf.contrib.slim
+import tf_slim as slim
 
 
 class HyperparamsBuilderTest(tf.test.TestCase):

@@ -26,7 +26,7 @@ of final feature maps.
 import collections
 import tensorflow as tf
 from object_detection.utils import ops
-slim = tf.contrib.slim
+import tf_slim as slim
 
 
 def get_depth_fn(depth_multiplier, min_depth):

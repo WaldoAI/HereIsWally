@@ -28,7 +28,7 @@ from object_detection.core import prefetcher
 from object_detection.core import standard_fields as fields
 from object_detection.utils import ops
 
-slim = tf.contrib.slim
+import tf_slim as slim
 
 EVAL_METRICS_FN_DICT = {
     'pascal_voc_metrics': eval_util.evaluate_detection_results_pascal_voc
