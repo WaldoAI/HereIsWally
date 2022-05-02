@@ -30,7 +30,7 @@ from object_detection.meta_architectures import faster_rcnn_meta_arch
 from nets import resnet_utils
 from nets import resnet_v1
 
-slim = tf.contrib.slim
+import tf_slim as slim
 
 
 class FasterRCNNResnetV1FeatureExtractor(

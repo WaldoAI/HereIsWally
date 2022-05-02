@@ -18,7 +18,7 @@ import tensorflow as tf
 
 from object_detection.protos import hyperparams_pb2
 
-slim = tf.contrib.slim
+import tf_slim as slim
 
 
 def build(hyperparams_config, is_training):

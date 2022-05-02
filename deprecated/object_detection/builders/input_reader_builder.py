@@ -27,8 +27,9 @@ import tensorflow as tf
 
 from object_detection.data_decoders import tf_example_decoder
 from object_detection.protos import input_reader_pb2
+import tf_slim as slim
 
-parallel_reader = tf.contrib.slim.parallel_reader
+parallel_reader = slim.parallel_reader
 
 
 def build(input_reader_config):

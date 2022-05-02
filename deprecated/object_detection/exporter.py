@@ -27,7 +27,7 @@ from object_detection.builders import model_builder
 from object_detection.core import standard_fields as fields
 from object_detection.data_decoders import tf_example_decoder
 
-slim = tf.contrib.slim
+import tf_slim as slim
 
 
 # TODO: Replace with freeze_graph.freeze_graph_with_def_protos when newer
